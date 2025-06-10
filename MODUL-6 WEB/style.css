@@ -1,0 +1,247 @@
+body {
+    background-color: #ffffff; 
+    color: #333;
+    font-family: cambria, serif; 
+}
+
+header { 
+    background-color: #f6faff; 
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    padding: 1rem 2 rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+}
+
+.navbar-brand {
+    color: #333 !important; 
+}
+
+.nav-link {
+    color: #333 !important; 
+    font-size: 0.9em;
+    padding: 0.5rem 0.5rem; 
+    transition: all 0.3s ease; 
+}
+
+.nav-link.active {
+    background-color: transparent; 
+    color: #333 !important; 
+    font-weight: bold;
+    border: 1px solid #bcbaba; 
+    border-radius: 8px;
+    padding: 0.5rem 1.5rem !important; 
+}
+
+.nav-link:hover, .nav-link:focus {
+    outline: none;
+    color: #000 !important;
+    background-color: #ddd;
+    cursor: pointer;
+}
+
+.hero-section {
+    background-color: #fff;
+    padding: 50px 0; 
+}
+
+.hero-section h1 {
+    font-size: 1.5em; 
+    color: #222;
+    margin-bottom: 0px; 
+    line-height: 1.3; 
+    font-family: Times New Roman, serif; 
+}
+
+.hero-section p.lead { 
+    font-size: 1.3em; 
+    margin-bottom: 0px; 
+    line-height: 1.4; 
+    color: #222;
+    font-weight: bold; 
+    font-family: Times New Roman, serif; 
+}
+
+.text-muted.small {
+    font-size: 0.7em; 
+    margin-top: 5px; 
+    margin-bottom: 50px; 
+    line-height: 0.3; 
+    letter-spacing: 3px;
+    color: #222;
+    font-family: Poppins !important;
+}
+
+.hero-section .tags {
+  margin-top: 0px !important;
+  padding-top: 0px !important;
+}
+
+.hero-section .tags button {
+    border: none; 
+    background-color: transparent; 
+    color: #555; 
+    transition: all 0.1s ease; 
+    padding: 0.5rem 1.2rem; 
+    border-radius: 0; 
+}
+
+.hero-section .tags button.rounded-pill { 
+    border-radius: 50rem !important; 
+    border: 1px solid #ccc; 
+    background-color: #fff; 
+    padding: 0.5rem 1.2rem; 
+}
+
+.hero-section .tags button.active { 
+    background-color: #fff; 
+    color: #333; 
+    font-weight: bold; 
+    border: 1px solid #333; 
+}
+
+.hero-section .tags button:hover { 
+    background-color: #ddd; 
+    color: #222; 
+    cursor: pointer;
+}
+
+.portfolio-grid {
+    padding-top: 00;
+  margin-top: -90px; 
+}
+
+.portfolio-grid .card {
+    border: 1px solid #eee !important; 
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05); 
+    overflow: hidden; 
+}
+
+.portfolio-grid .card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease-in-out; 
+    margin-bottom: 0px !important;
+}
+
+.portfolio-grid .card p, 
+.portfolio-grid .card .card-text {
+    margin-top: 0px;
+}
+
+.portfolio-grid .card img:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.footer {
+    background-color: #fff;
+    text-align: center;
+    padding: 30px 0; 
+    font-size: 0.75rem;
+    border-top: 1px solid #eee;
+    color: rgba(0, 0, 0, 0.900);
+    width: 100%;
+    position: relative;
+    margin-top: 50px;
+}
+
+.footer .logo {
+    color: #222;
+}
+
+.logo {
+  margin-top: 40px;
+}
+
+.footer p {
+  font-size: 0.7em;
+  color: #a1a1a1;
+  font-family: courier new, sans-serif;
+}
+
+.footer-social a {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    width: 20px; 
+    height: 20px;
+    background-color: #f0f0f0; 
+    border-radius: 2px; 
+    transition: background-color 0.2s ease, transform 0.2s ease;
+    text-decoration: none; 
+}
+
+.footer-social a:hover {
+    background-color: #f0f0f0; 
+    transform: scale(1.05); 
+}
+
+.footer-social a img {
+    display: block; 
+}
+
+/* Responsive untuk mobile */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+        max-width: 100%;
+    }
+    .nav-link {
+        font-size: 0.8em;
+        padding: 0.4rem 0.4rem;
+    }
+    .hero-section h1 {
+        font-size: 1.2em;
+    }
+    .hero-section p.lead {
+        font-size: 1.1em;
+    }
+    .footer-social a {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+.page-container {
+    position: relative; 
+}
+
+.corner-frame {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border: 5px solid black;
+    z-index: 999;
+
+}
+
+.top-left {
+    top: 0;
+    left: 0;
+    border-right: none;
+    border-bottom: none;
+}
+
+.top-right {
+    top: 0;
+    right: 0;
+    border-left: none;
+    border-bottom: none;
+}
+
+.bottom-left {
+    bottom: 0;
+    left: 0;
+    border-top: none;
+    border-right: none;
+}
+
+.bottom-right {
+    bottom: 0;
+    right: 0;
+    border-top: none;
+    border-left: none;
+}
