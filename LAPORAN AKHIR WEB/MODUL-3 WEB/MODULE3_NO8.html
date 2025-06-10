@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Pendaftaran Kursus</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            width: 600px;
+            margin: auto;
+            border: 1px solid #999;
+        }
+
+        .header {
+            background-color: skyblue;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .header h1 {
+            color: red;
+            margin: 0;
+        }
+
+        .form-section {
+            background-color: #888888; /* abu-abu sedang */
+            color: white;
+            padding: 20px;
+        }
+
+        .form-section h2 {
+            margin-top: 0;
+        }
+
+        .form-section label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        .form-section input[type="text"],
+        .form-section input[type="email"],
+        .form-section input[type="date"],
+        .form-section select,
+        .form-section textarea {
+            width: 100%;
+            padding: 5px;
+            margin-top: 5px;
+        }
+
+        .form-section input[type="radio"],
+        .form-section input[type="checkbox"] {
+            margin-top: 10px;
+        }
+
+        .comment-section {
+            background-color: salmon;
+            padding: 20px;
+        }
+
+        .button-group {
+            margin-top: 10px;
+        }
+
+        .button-group input {
+            padding: 5px 15px;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <h1>Pendaftaran Kursus</h1>
+    </div>
+
+    <div class="form-section">
+        <h2>Data Diri</h2>
+        <form>
+            <label>Nama
+                <input type="text" name="nama">
+            </label>
+            <label>NIM
+                <input type="text" name="nim">
+            </label>
+            <label>E-mail
+                <input type="email" name="email">
+            </label>
+            <label>Tanggal Lahir
+                <input type="date" name="tanggal_lahir">
+            </label>
+
+            <label>Jenis Kelamin</label>
+            <input type="radio" name="gender" value="Laki-laki"> Laki-laki
+            <input type="radio" name="gender" value="Perempuan"> Perempuan
+
+            <label>Pilih Program Kursus</label>
+            <input type="checkbox" name="kursus" value="C#"> C#
+            <input type="checkbox" name="kursus" value="Java"> Java
+            <input type="checkbox" name="kursus" value="SQL"> SQL
+            <input type="checkbox" name="kursus" value="HTML dan PHP"> HTML dan PHP
+
+            <label>Pilihan Hari/Jam Kursus</label>
+            <select name="jadwal">
+                <option value="Senin-Rabu">Senin - Rabu/09.00 - 11.00</option>
+                <option value="Selasa-Kamis">Selasa - Kamis/13.00 - 15.00</option>
+                <option value="Jumat-Sabtu">Jumat - Sabtu/10.00 - 12.00</option>
+            </select>
+    </div>
+
+    <div class="comment-section">
+        <label>Komentar Anda</label>
+        <textarea name="komentar" rows="4"></textarea>
+
+        <div class="button-group">
+            <input type="reset" value="Reset">
+            <input type="submit" value="Submit">
+            <input type="button" value="Cancel" onclick="window.location.href='#';">
+        </div>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>
